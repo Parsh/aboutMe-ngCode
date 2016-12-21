@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'me-home-tile',
-  templateUrl: './home-tile.component.html',
+  selector: 'me-main-tile',
+  templateUrl: './main-tile.component.html',
   styles: []
 })
-export class HomeTileComponent  {
+export class MainTileComponent  {
 
  @Input() private details: any ;
 

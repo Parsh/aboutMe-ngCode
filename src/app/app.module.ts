@@ -11,7 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { MLandAIComponent } from './mland-ai/mland-ai.component';
 import { WebDevComponent } from './web-dev/web-dev.component';
 import { NavbarComponent } from './home/navbar.component';
-import { HomeTileComponent } from './home/home-tile.component'
+import { MainTileComponent } from './shared/main-tile.component'
 
 import { DataService } from './data.service'
 @NgModule({
@@ -22,7 +22,7 @@ import { DataService } from './data.service'
     MLandAIComponent,
     WebDevComponent,
     NavbarComponent,
-    HomeTileComponent
+    MainTileComponent
   ],
   imports: [
     BrowserModule,
