@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service'
 
 @Component({
   selector: 'me-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styles: []
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
+  private tileDetails;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(private dataService : DataService) {
+          this.tileDetails = dataService.getHomeData();
+   }
 
 }

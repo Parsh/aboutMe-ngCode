@@ -9,14 +9,20 @@ import { HomeComponent } from './home/home.component';
 import { Routing } from './app.routes';
 import { AboutComponent } from './about/about.component';
 import { MLandAIComponent } from './mland-ai/mland-ai.component';
-import { WebDevComponent } from './web-dev/web-dev.component'
+import { WebDevComponent } from './web-dev/web-dev.component';
+import { NavbarComponent } from './home/navbar.component';
+import { HomeTileComponent } from './home/home-tile.component'
+
+import { DataService } from './data.service'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     MLandAIComponent,
-    WebDevComponent
+    WebDevComponent,
+    NavbarComponent,
+    HomeTileComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,7 @@ import { WebDevComponent } from './web-dev/web-dev.component'
     HttpModule,
     Routing
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
