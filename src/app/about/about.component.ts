@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DataService } from '../shared/data.service'
 
 @Component({
   selector: 'me-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styles: []
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent  {
 
-  constructor() { }
+  private info : any;
 
-  ngOnInit() {
-  }
+  constructor( private dataService : DataService) {
+       this.info = dataService.getAboutInformation();
+   }
+
+
 
 }

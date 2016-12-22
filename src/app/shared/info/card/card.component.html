@@ -1,28 +1,41 @@
-<!--Card-->
-<div [class]="cardInfo.class" data-wow-delay=".6s ">
+<div [class]="cardInfo.column">
 
-  <!--Card image-->
-  <div *ngIf="cardInfo.image" class="view hm-zoom z-depth-4">
-    <img [src]="cardInfo.src" class="img-fluid">
+  <!--Card-->
+  <div [class]="cardInfo.class" data-wow-delay=".6s ">
 
-  </div>
-  <!--/.Card image-->
+    <!--Card image-->
+    <div *ngIf="cardInfo.image" class="view hm-zoom z-depth-4">
+      <img [src]="cardInfo.src" class="img-fluid">
 
-  <!--Card content-->
-  <div *ngIf="cardInfo.content" class="card-block">
-    <!--Title-->
-    <h3 class="card-title">{{cardInfo.title}}</h3>
-    <!--Text-->
-    <p class="card-text">
-      <ng-content></ng-content>{{cardInfo.text}} </p>
+    </div>
+    <!--/.Card image-->
 
-    <div *ngIf="cardInfo.university">
-      <p n>Certified From - <span class="text-muted" style="font-size:18px">{{cardInfo.university}}</span> </p>
-      <a ui-sref="certificate" target="_blank" class="btn btn-primary waves-effect z-depth-3">Certificate</a>
+    <!--Card content-->
+    <div *ngIf="cardInfo.content" class="card-block">
+      <!--Title-->
+      <h3 class="card-title">{{cardInfo.title}}</h3>
+      <!--Text-->
+      <p class="card-text">
+        <ng-content></ng-content>{{cardInfo.text}} </p>
+
+      <div *ngIf="cardInfo.university">
+        <p n>Certified From - <span class="text-muted" style="font-size:18px">{{cardInfo.university}}</span> </p>
+        <a ui-sref="certificate" target="_blank" class="btn btn-primary waves-effect z-depth-3">Certificate</a>
+      </div>
+
+    </div>
+    <!--/.Card content-->
+
+    <!-- for about page(Card Style) -->
+    <div *ngIf="cardInfo.about" class="card-text">
+      <ul style="margin-left:50px" class="h2-responsive">
+        <li>{{cardInfo.title}} <span class="text-muted" style="font-size:22px">{{cardInfo.status}}</span></li>
+        <li class="text-muted" style="margin-left:60px"> - {{cardInfo.university}}</li>
+      </ul>
     </div>
 
   </div>
-  <!--/.Card content-->
+  <!--/.Card-->
+
 
 </div>
-<!--/.Card-->
