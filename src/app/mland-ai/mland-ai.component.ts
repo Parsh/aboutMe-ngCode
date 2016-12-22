@@ -8,10 +8,13 @@ import { DataService } from '../shared/data.service'
 })
 export class MLandAIComponent {
   private mlData: any ;
+  private info = {}
+
   constructor( private dataService : DataService ) {
       this.mlData = dataService.getMLData();
+
+      this.info = dataService.getMLInformation()
+
   }
-
-
 
 }

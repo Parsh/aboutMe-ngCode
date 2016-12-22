@@ -8,8 +8,11 @@ import { DataService } from '../shared/data.service'
 })
 export class WebDevComponent {
    private webData;
+   private info ;
   constructor( private dataService : DataService) {
       this.webData = dataService.getWebData();
+
+      this.info = dataService.getWebDevInformation();
   }
 
 }

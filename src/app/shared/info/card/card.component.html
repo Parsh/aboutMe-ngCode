@@ -2,11 +2,9 @@
 <div [class]="cardInfo.class" data-wow-delay=".6s ">
 
   <!--Card image-->
-  <div *ngIf="cardInfo.image" class="view overlay hm-black-strong">
+  <div *ngIf="cardInfo.image" class="view hm-zoom z-depth-4">
     <img [src]="cardInfo.src" class="img-fluid">
-    <div class="mask flex-center">
-      <h2 class="h3-responsive">#StartLearning Python</h2>
-    </div>
+
   </div>
   <!--/.Card image-->
 

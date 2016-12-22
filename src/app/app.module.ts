@@ -11,9 +11,12 @@ import { AboutComponent } from './about/about.component';
 import { MLandAIComponent } from './mland-ai/mland-ai.component';
 import { WebDevComponent } from './web-dev/web-dev.component';
 import { NavbarComponent } from './home/navbar.component';
-import { MainTileComponent } from './shared/main-tile.component'
+import { MainTileComponent } from './shared/main-tile/main-tile.component'
 
-import { DataService } from './shared/data.service'
+import { DataService } from './shared/data.service';
+import { InfoComponent } from './shared/info/info.component';
+import { DividerComponent } from './shared/info/divider/divider.component';
+import { CardComponent } from './shared/info/card/card.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,10 @@ import { DataService } from './shared/data.service'
     MLandAIComponent,
     WebDevComponent,
     NavbarComponent,
-    MainTileComponent
+    MainTileComponent,
+    InfoComponent,
+    DividerComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
