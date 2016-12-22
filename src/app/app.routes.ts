@@ -13,4 +13,4 @@ const AppRoutes : Routes = [
   {path : 'about', component : AboutComponent},
 ]
 
-export const Routing : ModuleWithProviders = RouterModule.forRoot(AppRoutes)
+export const Routing : ModuleWithProviders = RouterModule.forRoot(AppRoutes,{useHash : true})
