@@ -1,0 +1,31 @@
+<div class="container">
+
+  <me-divider [dividerTitle]="info[0].divider"></me-divider>
+
+  <div *ngFor="let row of info[1].rows" [class]="row.type">
+
+    <div [class]="row.column" *ngFor="let card of row.cards">
+      <me-card [cardInfo]="card">
+
+        <div *ngIf="card.passable">
+          <ul style="margin-left:20px">
+            <li> Super Flexible N Highly Scalable</li>
+            <li> Ability to build Very Complex Applications</li>
+            <li> Fast , Super Efficient and Elegantly Succinct </li>
+            <li> Colossal Community and BackedUp by GitHub</li>
+            <li> Library so huge that you cant even Imagine</li>
+            <li>Powers Google , AI / ML , Big Data and much More..</li>
+            <li> </li>
+          </ul>
+          <h3>Python is the Future</h3>
+          <h5 style="margin-left:20px ">  with <span style="font-size:19px">MachineLearning</span> / <span style="font-size:19px">AI</span> , <span style="font-size:19px">DataScience</span> and <span style="font-size:19px">BigData</span> Getting Up the Horizon , Python is gainnig Enormous Popularity among the MainFrame Developers and Scientific Community</h5>
+
+        </div>
+
+      </me-card>
+    </div>
+    <hr>
+
+  </div>
+
+</div>

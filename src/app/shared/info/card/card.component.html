@@ -1,0 +1,30 @@
+<!--Card-->
+<div [class]="cardInfo.class" data-wow-delay=".6s ">
+
+  <!--Card image-->
+  <div *ngIf="cardInfo.image" class="view overlay hm-black-strong">
+    <img [src]="cardInfo.src" class="img-fluid">
+    <div class="mask flex-center">
+      <h2 class="h3-responsive">#StartLearning Python</h2>
+    </div>
+  </div>
+  <!--/.Card image-->
+
+  <!--Card content-->
+  <div *ngIf="cardInfo.content" class="card-block">
+    <!--Title-->
+    <h3 class="card-title">{{cardInfo.title}}</h3>
+    <!--Text-->
+    <p class="card-text">
+      <ng-content></ng-content>{{cardInfo.text}} </p>
+
+    <div *ngIf="cardInfo.university">
+      <p n>Certified From - <span class="text-muted" style="font-size:18px">{{cardInfo.university}}</span> </p>
+      <a ui-sref="certificate" target="_blank" class="btn btn-primary waves-effect z-depth-3">Certificate</a>
+    </div>
+
+  </div>
+  <!--/.Card content-->
+
+</div>
+<!--/.Card-->
