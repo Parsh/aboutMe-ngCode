@@ -17,6 +17,7 @@ export class DataService {
       button: {
         isAvailable: true,
         url: 'MLandAI',
+        delay:'1.5s',
         class: 'btn btn-primary btn-lg z-depth-5 waves-effect waves-light wow bounceInUp'
       }
     },
@@ -37,6 +38,7 @@ export class DataService {
       button: {
         isAvailable: true,
         url: 'webDev',
+        delay:'1.6s',
         class: 'btn btn-primary btn-lg z-depth-5 wow rotateInUpLeft'
       }
     },
