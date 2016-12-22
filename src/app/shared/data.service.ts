@@ -153,17 +153,18 @@ export class DataService {
         rows: [
           {
             type: "row",
-            column: "col-md-6 col-sm-12",
             cards: [
               {
                 content: true,
+                column: "col-md-6 col-sm-12",
                 title: "ML Foundation",
-                text: "It is one of the most important and broadly used machine learning and statistics tools out there. It allows you to make predictions from data by learning the relationship between features of your data and some observed, continuous-valued response.",
+                text: "Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it.",
                 university: "University of Washington",
                 class: 'card z-depth-5 waves-effect wow fadeInUp'
               },
               {
                 content: true,
+                column: "col-md-6 col-sm-12",
                 title: "Regression",
                 text: "It is one of the most important and broadly used machine learning and statistics tools out there. It allows you to make predictions from data by learning the relationship between features of your data and some observed, continuous-valued response.",
                 university: "University of Washington",
@@ -174,10 +175,10 @@ export class DataService {
 
           {
             type: "row",
-            column: "col-md-6 col-sm-12",
             cards: [
               {
                 content: true,
+                column: "col-md-6 col-sm-12",
                 title: "Classification",
                 text: "Classification is one of the most widely used techniques in machine learning, with a broad array of applications, including sentiment analysis, ad targeting, spam detection, risk assessment, medical diagnosis and image classification.The core goal of classification is to predict a category or class y from some inputs x.",
                 university: "University of Washington",
@@ -185,6 +186,7 @@ export class DataService {
               },
               {
                 content: true,
+                column: "col-md-6 col-sm-12",
                 title: "Clustering and Retrieval",
                 text: "Clustering and retrieval are some of the most high-impact machine learning tools out there. Retrieval is used in almost every applications and device we interact with, like in providing a set of products related to one a shopper is currently considering, or a list of people you might want to connect with on a social media platform",
                 university: "University of Washington",
@@ -203,10 +205,11 @@ export class DataService {
         rows: [
           {
             type: "row",
-            column: "col-md-6 col-sm-12",
+
             cards: [
               {
                 content: true,
+                column: "offset-md-1 col-md-6 col-sm-12",
                 passable: true,
                 title: "Y Python ?",
                 text: "",
@@ -214,6 +217,7 @@ export class DataService {
               },
               {
                 image: true,
+                column: "col-md-5 col-sm-12",
                 src: '../../assets/img/mLAndAI/python.jpg ',
                 class: 'card z-depth-5 waves-effect'
               }
@@ -355,10 +359,11 @@ export class DataService {
           rows:[
             {
               type : 'row',
-              column:"col-md-6 col-sm-12",
+
               cards:[
                 {
                   content:true,
+                  column:"col-md-4 col-sm-12",
                   title:"Currently Framing Android 7.0",
                   text:"Get your apps ready for the latest version of Android, with new system behaviors to save battery and memory. Extend your apps with multi-window UI, direct reply notifications , enhanced Doze and more.",
                   university:"The Hong Kong University",
@@ -366,8 +371,9 @@ export class DataService {
                 },
                 {
                   image:true,
+                  column:"col-md-8 col-sm-12",
                   src:'../../assets/img/webDev/android.jpg',
-                  class: 'card z-depth-2 waves-effect view hm-zoom'
+                  class: 'card z-depth-5 waves-effect view hm-zoom'
                 }
               ]
             }
@@ -444,6 +450,7 @@ export class DataService {
                   about : true ,
                   column : 'offset-sm-1 col-sm-10 ',
                   title: 'Full Stack Web Developer',
+                  status : '[MEAN Stack 2.0]',
                   university:'specialization from The Hong Kong University',
                   class : "card hoverable waves-effect z-depth-5  wow fadeInDown"
                 },
@@ -458,6 +465,7 @@ export class DataService {
                   about : true ,
                   column : 'offset-sm-1 col-sm-10 ',
                   title: 'Node JS',
+                  status : '[Express]',
                   university:'specialization @Udemy',
                   class : "card hoverable waves-effect z-depth-5  wow fadeInDown"
                 },
