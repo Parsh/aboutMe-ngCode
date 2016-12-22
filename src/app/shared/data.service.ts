@@ -160,6 +160,7 @@ export class DataService {
                 title: "ML Foundation",
                 text: "Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it.",
                 university: "University of Washington",
+                certificate:"ML-Foundation",
                 class: 'card z-depth-5 waves-effect wow fadeInUp'
               },
               {
@@ -168,6 +169,7 @@ export class DataService {
                 title: "Regression",
                 text: "It is one of the most important and broadly used machine learning and statistics tools out there. It allows you to make predictions from data by learning the relationship between features of your data and some observed, continuous-valued response.",
                 university: "University of Washington",
+                certificate:"ML-Regression",
                 class: 'card z-depth-5 waves-effect wow fadeInLeft'
               }
             ]
@@ -182,6 +184,7 @@ export class DataService {
                 title: "Classification",
                 text: "Classification is one of the most widely used techniques in machine learning, with a broad array of applications, including sentiment analysis, ad targeting, spam detection, risk assessment, medical diagnosis and image classification.The core goal of classification is to predict a category or class y from some inputs x.",
                 university: "University of Washington",
+                certificate:"ML-Classification",
                 class: 'card z-depth-5 waves-effect wow fadeInRight'
               },
               {
@@ -190,6 +193,7 @@ export class DataService {
                 title: "Clustering and Retrieval",
                 text: "Clustering and retrieval are some of the most high-impact machine learning tools out there. Retrieval is used in almost every applications and device we interact with, like in providing a set of products related to one a shopper is currently considering, or a list of people you might want to connect with on a social media platform",
                 university: "University of Washington",
+                certificate:"ML-ClusteringAndRetrieval",
                 class: 'card z-depth-5 waves-effect wow fadeInDown'
               }
             ]
@@ -241,6 +245,7 @@ export class DataService {
                 title: "Fundamentals",
                 text: "",
                 university: "University of Michigan",
+                certificate:"PythonFundamental",
                 class: 'card z-depth-5 waves-effect wow fadeInUp'
               },
               {
@@ -248,6 +253,7 @@ export class DataService {
                 title: "Python Data Structures",
                 text: "",
                 university: "University of Michigan",
+                certificate:"PythonDataStructure",
                 class: 'card z-depth-5 waves-effect wow fadeInUp'
               },
               {
@@ -255,6 +261,7 @@ export class DataService {
                 title: "Web with Python",
                 text: "",
                 university: "University of Michigan",
+                certificate:"PythonToAccessWebData",
                 class: 'card z-depth-5 waves-effect wow fadeInUp'
               }
             ]
@@ -268,6 +275,7 @@ export class DataService {
                 title: "Databases with Python",
                 text: "",
                 university: "University of Michigan",
+                certificate:"DatabasesWithPython",
                 class: 'card z-depth-5 waves-effect wow fadeInDown'
               },
               {
@@ -275,6 +283,7 @@ export class DataService {
                 title: "The Capstone Project",
                 text: "",
                 university: "University of Michigan",
+                certificate:"PythonCapstone",
                 class: 'card z-depth-5 waves-effect wow fadeInDown'
               },
               {
@@ -282,6 +291,7 @@ export class DataService {
                 title: "Specilaization",
                 text: "",
                 university: "University of Michigan",
+                certificate:"PythonSpecialization",
                 class: 'card z-depth-5 waves-effect wow fadeInDown'
               }
             ]
@@ -314,6 +324,7 @@ export class DataService {
                 title: "Node JS",
                 text: "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. ",
                 university: "The Hong Kong University",
+                certificate:"Node",
                 class: "card hoverable waves-effect"
               },
               {
@@ -323,6 +334,7 @@ export class DataService {
                 title: "Angular JS",
                 text: "AngularJS is a structural framework for dynamic web apps. It lets you express your application's components clearly and succinctly. Angular's data binding and dependency injection makes it a Champ ",
                 university: "Johns Hopkins University",
+                certificate:"AngularJHU",
                 class: "card hoverable waves-effect"
               }
             ]
@@ -346,6 +358,7 @@ export class DataService {
                 title: "BootStrap & Material Design ",
                 text: "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.Material Design!! Thatz the Google's Quantum Paper. ",
                 university: "Johns Hopkins University",
+                certificate:"Bootstrap",
                 class: "card hoverable waves-effect"
               }
             ]
@@ -367,6 +380,7 @@ export class DataService {
                   title:"Currently Framing Android 7.0",
                   text:"Get your apps ready for the latest version of Android, with new system behaviors to save battery and memory. Extend your apps with multi-window UI, direct reply notifications , enhanced Doze and more.",
                   university:"The Hong Kong University",
+                  certificate:"Android",
                   class: 'card-block z-depth-3 waves-effect wow rubberBand'
                 },
                 {
@@ -395,6 +409,7 @@ export class DataService {
                 title: "The Holy Trinity",
                 text: "HTML CSS and JavaScript",
                 university: "The Hong Kong University",
+                certificate:"HTMLCSS&JavaScript",
                 class: "card hoverable waves-effect wow fadeInUp"
               },
               {
@@ -404,6 +419,7 @@ export class DataService {
                 title: "Java",
                 text: "Core Java And Advance",
                 university: "Duke University",
+                certificate:"Java",
                 class: "card hoverable waves-effect wow fadeInUp"
               },
               {
@@ -413,6 +429,7 @@ export class DataService {
                 title: "Object Oriented Programming",
                 text: "Understanding Programs from an Object's perspective",
                 university: "UC SanDiego",
+                certificate:"OOP",
                 class: "card hoverable waves-effect wow fadeInUp"
               }
             ]

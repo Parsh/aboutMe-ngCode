@@ -16,7 +16,8 @@ import { MainTileComponent } from './shared/main-tile/main-tile.component'
 import { DataService } from './shared/data.service';
 import { InfoComponent } from './shared/info/info.component';
 import { DividerComponent } from './shared/info/divider/divider.component';
-import { CardComponent } from './shared/info/card/card.component'
+import { CardComponent } from './shared/info/card/card.component';
+import { CertificateComponent } from './certificate/certificate.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { CardComponent } from './shared/info/card/card.component'
     MainTileComponent,
     InfoComponent,
     DividerComponent,
-    CardComponent
+    CardComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,

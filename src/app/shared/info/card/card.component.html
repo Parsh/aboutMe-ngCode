@@ -19,8 +19,8 @@
         <ng-content></ng-content>{{cardInfo.text}} </p>
 
       <div *ngIf="cardInfo.university">
-        <p n>Certified From - <span class="text-muted" style="font-size:18px">{{cardInfo.university}}</span> </p>
-        <a ui-sref="certificate" target="_blank" class="btn btn-primary waves-effect z-depth-3">Certificate</a>
+        <p>Certified From - <span class="text-muted" style="font-size:18px">{{cardInfo.university}}</span> </p>
+        <a [routerLink]="['/certificate',cardInfo.certificate]" target="_blank" class="btn btn-primary waves-effect z-depth-3">Certificate</a>
       </div>
 
     </div>
