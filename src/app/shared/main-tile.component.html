@@ -4,12 +4,15 @@
   <div class="full-bg-img flex-center ">
     <ul>
       <li>
-        <h1 id="main-title" [class]="details.mainHeading.class" data-wow-delay="0.7s">{{details.mainHeading.title}}</h1></li>
+        <h1 [id]="details.mainHeading.id" [class]="details.mainHeading.class" data-wow-delay="0.7s">{{details.mainHeading.title}}</h1></li>
       <li>
-        <h4 [class]="details.subHeading.class" data-wow-delay="1.2s"> {{details.subHeading.title}}</h4>
+        <h4 [id]="details.subHeading.id" [class]="details.subHeading.class" data-wow-delay="1.2s"><ng-content></ng-content> {{details.subHeading.title}}</h4>
       </li>
       <li *ngIf="details.button.isAvailable">
         <a [routerLink]="[details.button.url]" [class]="details.button.class" data-wow-delay="1.5s">Discover Me</a>
+      </li>
+      <li *ngIf="details.subHeading2">
+        <h4 [class]="details.subHeading2.class" data-wow-delay="1.1s"> {{details.subHeading2.title}}</h4>
       </li>
     </ul>
   </div>

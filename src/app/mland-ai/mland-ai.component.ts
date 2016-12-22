@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DataService } from '../shared/data.service'
 
 @Component({
   selector: 'me-mland-ai',
   templateUrl: './mland-ai.component.html',
-  styleUrls: ['./mland-ai.component.css']
+  styles: []
 })
-export class MLandAIComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class MLandAIComponent {
+  private mlData: any ;
+  constructor( private dataService : DataService ) {
+      this.mlData = dataService.getMLData();
   }
+
+
 
 }

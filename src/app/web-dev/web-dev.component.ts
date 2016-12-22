@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { DataService } from '../shared/data.service'
 
 @Component({
   selector: 'me-web-dev',
   templateUrl: './web-dev.component.html',
-  styleUrls: ['./web-dev.component.css']
+  styles: []
 })
-export class WebDevComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class WebDevComponent {
+   private webData;
+  constructor( private dataService : DataService) {
+      this.webData = dataService.getWebData();
   }
 
 }

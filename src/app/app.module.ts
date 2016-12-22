@@ -13,7 +13,7 @@ import { WebDevComponent } from './web-dev/web-dev.component';
 import { NavbarComponent } from './home/navbar.component';
 import { MainTileComponent } from './shared/main-tile.component'
 
-import { DataService } from './data.service'
+import { DataService } from './shared/data.service'
 @NgModule({
   declarations: [
     AppComponent,
