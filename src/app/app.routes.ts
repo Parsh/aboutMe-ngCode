@@ -12,7 +12,8 @@ const AppRoutes : Routes = [
   {path : 'MLandAI', component : MLandAIComponent},
   {path : 'webDev', component : WebDevComponent},
   {path : 'about', component : AboutComponent},
-  {path : 'certificate/:name' , component: CertificateComponent}
+  {path : 'certificate/:name' , component: CertificateComponent},
+  {path : "**" , component : HomeComponent}
 ]
 
 export const Routing : ModuleWithProviders = RouterModule.forRoot(AppRoutes,{useHash : true})
