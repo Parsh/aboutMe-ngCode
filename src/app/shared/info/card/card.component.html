@@ -27,13 +27,14 @@
     <!--/.Card content-->
 
     <!-- for about page(Card Style) -->
-    <div *ngIf="cardInfo.about" class="card-text">
-      <ul style="margin-left:50px" class="h2-responsive">
-        <li>{{cardInfo.title}} <span class="text-muted" style="font-size:22px">{{cardInfo.status}}</span></li>
-        <li class="text-muted" style="margin-left:60px"> - {{cardInfo.university}}</li>
-      </ul>
+    <div *ngIf="cardInfo.about" class="card-block">
+      <div class="card-text">
+        <ul style="margin-left:50px" class="h2-responsive">
+          <li>{{cardInfo.title}} <span class="text-muted" style="font-size:22px">{{cardInfo.status}}</span></li>
+          <li class="text-muted" style="margin-left:60px"> - {{cardInfo.university}}</li>
+        </ul>
+      </div>
     </div>
-
   </div>
   <!--/.Card-->
 
