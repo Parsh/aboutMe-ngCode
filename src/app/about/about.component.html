@@ -59,7 +59,7 @@
 
 
 
-<me-info [info]="info.page1"></me-info>
+<me-info *ngIf="info" [info]="info.page1"></me-info>
 
 <!-- included as they have a very diff format -->
 <div class="container">

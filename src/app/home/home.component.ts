@@ -6,11 +6,14 @@ import { DataService } from '../shared/data.service'
   templateUrl: './home.component.html',
   styles: []
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
   private tileDetails;
 
-  constructor(private dataService : DataService) {
-          this.tileDetails = dataService.getHomeData();
-   }
+  constructor(private dataService : DataService) { }
 
+  ngOnInit(){
+      this.dataService.getHomeData().subscribe(
+          (data:any) =>  this.tileDetails = data
+          )
+  }
 }

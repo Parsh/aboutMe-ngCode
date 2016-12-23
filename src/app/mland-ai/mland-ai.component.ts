@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import { DataService } from '../shared/data.service'
 
 @Component({
@@ -6,15 +6,19 @@ import { DataService } from '../shared/data.service'
   templateUrl: './mland-ai.component.html',
   styles: []
 })
-export class MLandAIComponent {
-  private mlData: any ;
-  private info = {}
+export class MLandAIComponent implements OnInit{
+  private mlData;
+  private info;
 
-  constructor( private dataService : DataService ) {
-      this.mlData = dataService.getMLData();
+  constructor( private dataService : DataService ) {}
 
-      this.info = dataService.getMLInformation()
+  ngOnInit(){
+      this.dataService.getMLData().subscribe(
+        (data:any) => this.mlData = data
+      );
 
+      this.dataService.getMLInformation().subscribe(
+        (data:any) => this.info = data
+      )
   }
-
 }

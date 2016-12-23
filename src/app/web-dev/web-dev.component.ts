@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import { DataService } from '../shared/data.service'
 
 @Component({
@@ -6,13 +6,15 @@ import { DataService } from '../shared/data.service'
   templateUrl: './web-dev.component.html',
   styles: []
 })
-export class WebDevComponent {
-   private webData;
+export class WebDevComponent implements OnInit{
    private info ;
-  constructor( private dataService : DataService) {
-      this.webData = dataService.getWebData();
+  constructor( private dataService : DataService) {}
 
-      this.info = dataService.getWebDevInformation();
+  ngOnInit(){
+
+      this.dataService.getWebDevInformation().subscribe(
+        (data:any) =>   this.info = data
+      )
   }
 
 }

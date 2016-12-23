@@ -2,7 +2,7 @@
 
   <me-divider [dividerTitle]="info[0].divider"></me-divider>
 
-  <div *ngFor="let row of info[1].rows" [class]="row.type">
+  <div *ngFor="let row of info[1].rows " [class]="row.type">
 
     <div [class]="row.column" *ngFor="let card of row.cards">
       <me-card [cardInfo]="card">

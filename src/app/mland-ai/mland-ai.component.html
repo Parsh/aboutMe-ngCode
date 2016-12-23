@@ -1,14 +1,14 @@
-<me-main-tile [details]="mlData[0]"></me-main-tile>
+<me-main-tile *ngIf="mlData" [details]="mlData[0]"></me-main-tile>
 
-<me-info [info]="info.page1"></me-info>
+<me-info *ngIf="info" [info]="info.page1"></me-info>
 <br><br><br>
 
-<me-main-tile [details]="mlData[1]">
+<me-main-tile *ngIf="mlData" [details]="mlData[1]">
   <span style="font-size:23px">Coz it Teaches you</span> <br> <i class="fa fa-quote-left" aria-hidden="true"></i> How To Think <i class="fa fa-quote-right" aria-hidden="true"></i>
 </me-main-tile>
 
-<me-info [info]="info.page2"></me-info>
+<me-info *ngIf="info" [info]="info.page2"></me-info>
 
-<me-info [info]="info.page3"></me-info>
+<me-info *ngIf="info" [info]="info.page3"></me-info>
 
 <br><br><br>

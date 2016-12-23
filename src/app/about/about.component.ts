@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 import { DataService } from '../shared/data.service'
 
 @Component({
@@ -6,14 +6,17 @@ import { DataService } from '../shared/data.service'
   templateUrl: './about.component.html',
   styles: []
 })
-export class AboutComponent  {
+export class AboutComponent implements OnInit {
 
-  private info : any;
+  private info;
 
-  constructor( private dataService : DataService) {
-       this.info = dataService.getAboutInformation();
-   }
+  constructor( private dataService : DataService) { }
 
+  ngOnInit(){
+      this.dataService.getAboutInformation().subscribe(
+          (data:any) =>  this.info = data
+          )
+  }
 
 
 }
